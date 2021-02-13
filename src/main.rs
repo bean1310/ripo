@@ -20,16 +20,4 @@ fn main() {
     } else {
         panic!("Err");
     }
-
-    // match _matches.subcommand_name() {
-    //     Some("archs") => archs::cli(),
-    //     Some("create") => create::cli(),
-    //     Some("detailed_info") => {
-
-    //         detailed_info::cli(_matches)
-    //     },
-    //     Some("extract") => extract::cli(),
-    //     None => println!("none"),
-    //     _ => println!("def"),
-    // }
 }
