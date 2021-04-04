@@ -1,4 +1,4 @@
-use crate::objects::arch::{Arch, CpuType};
+use crate::objects::arch::Arch;
 use std::fs::File;
 use std::io::Read;
 use std::path::Path;
