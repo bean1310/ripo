@@ -1,0 +1,63 @@
+name: ripo
+version: "0.1"
+author: Isato Matsushita. <isato.m@icloud.com>
+about: lipo by rust
+args:
+    # - config:
+    #     short: c
+    #     long: config
+    #     value_name: FILE
+    #     help: Sets a custom config file
+    #     takes_value: true
+    # - input_file:
+    #     help: Sets the input file to use
+    #     required: true
+    #     index: 1
+    - verbose:
+        short: v
+        multiple: true
+        help: Sets the level of verbosity
+subcommands:
+    - archs:
+        about: display archs in universal binary
+        version: "0.1"
+        author: Isato Matsushita. <isato.m@icloud.com>
+        args:
+            - input_file:
+                required: true
+                help: universal binary file path
+    - create:
+        about: display archs in universal binary
+        version: "0.1"
+        author: Isato Matsushita. <isato.m@icloud.com>
+        args:
+            - input_file_path:
+                required: true
+                multiple: true
+                takes_value: true
+                short: "i"
+                long: "input"
+                help: input file(s) path
+            - output_file_path: 
+                required: true
+                multiple: false
+                takes_value: true
+                short: "o"
+                long: "output"
+                help: output file path
+    - detailed_info:
+        about: display datailed infomation of universal binary
+        version: "0.1"
+        author: Isato Matsushita. <isato.m@icloud.com>
+        args:
+            - input_file:
+                required: true
+                help: universal binary file path
+    - extract:
+        about: display archs in universal binary
+        version: "0.1"
+        author: Isato Matsushita. <isato.m@icloud.com>
+        args:
+            - input_file:
+                required: true
+                help: universal binary file path
